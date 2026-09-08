@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ccc5c5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+  
+            overflow-x: hidden; 
+        }
+
+
+        .container {
+            background-color: #ffffff;
+            width: 140%;
+            max-width: 1250px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+        }
+
+        .container h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: #34495e;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 5px;
+        }
+
+
+.container h3 {
+            color: #34495e;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            text-align: center;
+        }
+
+
+        .container p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #617fbe;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .container ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container li {
+            background-color: #f8f9fa;
+            margin-bottom: 8px;
+            padding: 12px 15px;
+            border-radius: 6px;
+            font-size: 15px;
+            border-left: 4px solid #3498db;
+        }
+
+        .container form {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .container input[type="email"],
+        .container input[type="password"],
+        .container input[type="date"] {
+            width: 100%;
+            margin-bottom: 8px;
+            padding: 17px;
+            border: 1px solid #cccccc;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        .container input:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+       
+        .theme-selection {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        .theme-selection label {
+            font-size: 15px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 500;
+        }
+
+        .theme-selection input[type="radio"] {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+
+        .container button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .container button:hover {
+            background-color: #2980b9;
+        }
+
+        .container .contact-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .container .contact-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+
+        <h2>About Me</h2>
+        <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites.</p>
+
+        <h2>My Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> Portfolio Website</li>
+            <li><strong>Project 2:</strong> Project about animals</li>
+            <li><strong>Project 3:</strong> Mini Project</li>
+        </ul>
+        <br>
+        <p>Leave your details and we will contact you</p>
+        
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <input type="password" placeholder="Enter your password" required>
+            <input type="date" required>
+
+<h3>Did you like the site?</h3>
+
+            <div class="theme-selection">
+                <label>
+                    <input type="radio" name="theme" id="light" checked> Yes, I liked it
+                </label>
+                <label>
+                    <input type="radio" name="theme" id="dark"> No, I didn't like it
+                </label>
+                <label>
+                    <input type="radio" name="theme" id="blue"> Not bad, but I expected more
+                </label>
+            </div>
+            
+            <button type="submit">Submit</button>
+            <p><span>If you complete all the fields click "Submit"</span></p>
+        </form>
+        
+        <a href="https://allegro.pl" target="_blank" class="contact-link">Our shop</a>
+        <a href="http://127.0.0" target="_blank" class="contact-link">Contact us</a>
+    </div>
+
+</body>
+</html>
