@@ -17,8 +17,8 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-  
-            overflow-x: hidden; 
+
+            overflow-x: hidden;
         }
 
 
@@ -50,7 +50,7 @@
         }
 
 
-.container h3 {
+        .container h3 {
             color: #34495e;
             font-size: 20px;
             margin-top: 25px;
@@ -108,7 +108,7 @@
             outline: none;
         }
 
-       
+
         .theme-selection {
             display: flex;
             justify-content: center;
@@ -136,12 +136,15 @@
             color: white;
             border: none;
             width: 100%;
+            max-width: 200px;
             padding: 15px;
             font-size: 16px;
             font-weight: bold;
             border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .container button:hover {
@@ -160,8 +163,14 @@
         .container .contact-link:hover {
             text-decoration: underline;
         }
+
+  
+            
+       
     </style>
 </head>
+
+
 
 <body>
 
@@ -179,13 +188,13 @@
         </ul>
         <br>
         <p>Leave your details and we will contact you</p>
-        
+
         <form>
             <input type="email" placeholder="Enter your email" required>
             <input type="password" placeholder="Enter your password" required>
             <input type="date" required>
 
-<h3>Did you like the site?</h3>
+            <h3>Did you like the site?</h3>
 
             <div class="theme-selection">
                 <label>
@@ -198,14 +207,15 @@
                     <input type="radio" name="theme" id="blue"> Not bad, but I expected more
                 </label>
             </div>
-            
-            <button type="submit">Submit</button>
+
+            <button type="submit" onclick="redirect('second.html')">Submit</button> 
             <p><span>If you complete all the fields click "Submit"</span></p>
         </form>
-        
+
         <a href="https://allegro.pl" target="_blank" class="contact-link">Our shop</a>
         <a href="http://127.0.0" target="_blank" class="contact-link">Contact us</a>
     </div>
 
 </body>
+
 </html>
